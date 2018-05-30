@@ -262,3 +262,40 @@ footer .socicon {
     width:50px;
     height:50px;
 }
+
+@media (max-width: 800px){
+    main .articles{
+    grid-template-rows:repeat(10, auto);
+    }
+    article {
+    grid-template-columns: 1fr;
+    margin-top:-31px;
+    }
+    article .img-block {
+    grid-column:span 2;
+    }
+    #introduction img{
+        display:none;
+    }
+    .articles .discription div{
+        width:440px;
+    }
+    .articles .discription p {
+    border-top:none;
+    }
+    .articles .discription h2 {
+    background-color: rgba(255,255,255, 0.5);
+    }
+    #cambodia .img-block{
+        grid-row-start:2;
+    }
+    #cambodia .discription{
+        grid-row-start:3;
+    }
+    #indonesia .img-block{
+        grid-row-start:2;
+    }
+    #indonesia .discription{
+        grid-row-start:3;
+    }
+}
