@@ -10,7 +10,7 @@ body {
     margin:auto;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     font-family: 'Alfa Slab One', cursive;
 }
 h1 {
@@ -25,7 +25,7 @@ h3 {
     font-size:20px;
 }
 
-a{
+a {
     text-decoration:none;    
 }
 
@@ -40,7 +40,7 @@ header {
     z-index:1;
 }
 
-.top-menu{
+.top-menu {
     flex:1;
 }
 
@@ -67,53 +67,53 @@ color:#29d9c2;
     margin-left:auto;
 }
 
-main{
+main {
     top: -66px;
     position: relative;
 }
 
-main .banner-block{
+main .banner-block {
     height:653px;
     background-image:url(../img/banner.jpg);
     background-size:cover;
     background-position:center center;
 }
 
-main .banner-block h2,h3{
+main .banner-block h2,h3 {
     text-align:center;
     color:white;
 }
 
-main .banner-block h2:hover{
+main .banner-block h2:hover {
     font-size:2em;
 }
-nav{
+nav {
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows:repeat(7, 93px);
 }
 
-main .banner-block .nav-item{
+main .banner-block .nav-item {
     overflow:hidden;
     grid-row-start:7;
 }
 
-main .articles{
+main .articles {
     display:grid;
     grid-template-rows:repeat(5, auto);
 }
 
-article{
+article {
     display:grid;
     grid-template-columns:50% 50%;
     margin-top:25px;
 }
 
-.article-head{
+.article-head {
     grid-column:span 2;
 }
 
-article img{
+article img {
     max-height: 300px;
     width:100%;
 }
@@ -124,19 +124,19 @@ main .articles #cambodia .article-head {
 main .articles #indonesia .article-head {
     text-align:right;
 }
-article .img-block{
+article .img-block {
     position:relative;
     bottom: -3px;
 }
 
-article .img-block h2{
+article .img-block h2 {
     position:absolute;
     color:white;
     top:10px;
     left:20px;
 }
 
-.articles .discription{
+.articles .discription {
     display:flex;
     justify-content:center;
     align-items:center;
@@ -145,7 +145,7 @@ article .img-block h2{
     padding-bottom: 40px;
 }
 
-.articles .discription h2{
+.articles .discription h2 {
     padding: 0 3%;
     display: inline;
     position: relative;
@@ -153,19 +153,19 @@ article .img-block h2{
     background-color: white;
 }
 
-.articles .discription p{
+.articles .discription p {
     padding: 20px 1%;
     border: 1px solid black;
 }
 
-main #contact{
+main #contact {
     display:flex;
     justify-content:center;
     flex-direction:column;
     background-image:url(../img/map.jpg);
 }
 
-main #contact h1{
+main #contact h1 {
     text-align:center;
     margin:30px 0;
 }
@@ -225,7 +225,7 @@ footer div {
     align-items: center;
 }
 
-footer .footer-menu ul{
+footer .footer-menu ul {
 display:flex;
 }
 
@@ -247,11 +247,11 @@ footer #fb{
     background-image:url(../img/facebook.png);
 }
 
-footer #instagram{
+footer #instagram {
     background-image:url(../img/instagram.png);
 }
 
-footer #youtube{
+footer #youtube {
     background-image:url(../img/youtube.png);
 }
 
@@ -263,39 +263,107 @@ footer .socicon {
     height:50px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     main .articles{
-    grid-template-rows:repeat(10, auto);
+        grid-template-rows:repeat(10, auto);
     }
     article {
-    grid-template-columns: 1fr;
-    margin-top:-31px;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+    }
+    .article-head {
+        padding:0 10%;
     }
     article .img-block {
-    grid-column:span 2;
+        grid-column:span 2;
+        display: flex;
+        justify-content: center;
+        margin: 0 10%;
     }
-    #introduction img{
+    #introduction img {
         display:none;
     }
     .articles .discription div{
         width:440px;
+        margin-top: -30px;
     }
     .articles .discription p {
-    border-top:none;
+        border-top:none;
     }
     .articles .discription h2 {
-    background-color: rgba(255,255,255, 0.5);
+        background-color: rgba(255,255,255, 0.5);
+        z-index: 1;
     }
     #cambodia .img-block{
         grid-row-start:2;
     }
-    #cambodia .discription{
+    #cambodia .discription {
         grid-row-start:3;
     }
-    #indonesia .img-block{
+    #indonesia .img-block {
         grid-row-start:2;
     }
-    #indonesia .discription{
+    #indonesia .discription {
         grid-row-start:3;
+    }
+    article img {
+        max-height:none;
+    }
+    main .banner-block h2:hover {
+        font-size:22px;
+    }
+    main #contact form {
+        display: grid;
+        grid-template-rows: 150px 150px 90px;
+        grid-template-columns: 1fr;
+    }
+    main #contact .first-part-form {
+        grid-row-start:1;
+    }
+    main #contact .second-part-form {
+        grid-row-start:2;
+    }
+    main #contact form .send {
+        grid-row-start:3;
+    }
+}
+
+@media (max-width: 625px){
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .top-menu ul li a {
+        font-size: 14px;
+    }
+    article .img-block {
+        margin: 0 0;
+    }
+    main footer{
+        font-size:12px;
+    }
+    footer .socicon {
+        width: 35px;
+        height: 35px;
+    }
+    footer .footer-menu ul {
+        display:block;
+    }
+    main .banner-block .nav-item {
+        grid-column:span 2;
+    }
+    main .banner-block .row-start {
+        grid-row-start: 6;
+    }
+    .articles .discription div {
+        width: 100%;
+    }
+    .article-head h2{
+        text-align:center;
+    }
+    article img {
+        max-height: 300px;
     }
 }
