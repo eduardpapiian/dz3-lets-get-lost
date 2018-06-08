@@ -136,7 +136,7 @@ article .img-block h2 {
     left:20px;
 }
 
-.articles .discription {
+.articles .description {
     display:flex;
     justify-content:center;
     align-items:center;
@@ -145,7 +145,7 @@ article .img-block h2 {
     padding-bottom: 40px;
 }
 
-.articles .discription h2 {
+.articles .description h2 {
     padding: 0 3%;
     display: inline;
     position: relative;
@@ -153,7 +153,7 @@ article .img-block h2 {
     background-color: white;
 }
 
-.articles .discription p {
+.articles .description p {
     padding: 20px 1%;
     border: 1px solid black;
 }
@@ -283,27 +283,27 @@ footer .socicon {
     #introduction img {
         display:none;
     }
-    .articles .discription div{
+    .articles .description div{
         width:440px;
         margin-top: -30px;
     }
-    .articles .discription p {
+    .articles .description p {
         border-top:none;
     }
-    .articles .discription h2 {
+    .articles .description h2 {
         background-color: rgba(255,255,255, 0.5);
         z-index: 1;
     }
     #cambodia .img-block{
         grid-row-start:2;
     }
-    #cambodia .discription {
+    #cambodia .description {
         grid-row-start:3;
     }
     #indonesia .img-block {
         grid-row-start:2;
     }
-    #indonesia .discription {
+    #indonesia .description {
         grid-row-start:3;
     }
     article img {
@@ -335,7 +335,7 @@ footer .socicon {
     h2 {
         font-size: 22px;
     }
-    .articles .discription div {
+    .articles .description div {
     margin-top: -22px;
     }
     .top-menu ul li a {
@@ -360,7 +360,7 @@ footer .socicon {
     main .banner-block .row-start {
         grid-row-start: 6;
     }
-    .articles .discription div {
+    .articles .description div {
         width: 100%;
     }
     .article-head h2{
