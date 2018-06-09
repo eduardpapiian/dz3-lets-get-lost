@@ -4,22 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>Lets Get Lost</title>
 </head>
 <body>
-    <header>
-        <div class="top-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#introduction">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="logo"><h1>Lets Get <span>Lost</span></h1></li>
-            </ul>
+    <div class="container">
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-dark ">
+                  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse top-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#introduction">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                <a class="navbar-brand logo" href="#"><h1>Lets Get <span>Lost</span></h1></a>
+            </nav>
+            <!--<div class="top-menu">-->
+            <!--    <ul>-->
+            <!--        <li><a href="index.html">Home</a></li>-->
+            <!--        <li><a href="#introduction">About</a></li>-->
+            <!--        <li><a href="#contact">Contact</a></li>-->
+            <!--        <li class="logo"></li>-->
+            <!--    </ul>-->
+            <!--</div>-->
+        </header>
         </div>
-    </header>
     <main>
         <div class="banner-block">
             <nav>
@@ -140,7 +162,7 @@
                     <div class="second-part-form">
                         <p>
                             <label>Your message<br>
-                                <textarea name="message" rows="7" cols="52" placeholder="Your message"></textarea>
+                                <textarea name="message" rows="4" cols="52" placeholder="Your message"></textarea>
                             </label>
                         </p>
                     </div>
@@ -167,5 +189,12 @@
             </div>
         </footer>
     </main>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>

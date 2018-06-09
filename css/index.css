@@ -28,16 +28,34 @@ h3 {
 a {
     text-decoration:none;    
 }
+a:hover {
+    text-decoration:none;    
+}
 
 h1 span, h2 span, h3 span {
     color:#29d9c2;
 }
 
+.container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    position: fixed;
+    z-index: 1;
+    max-width:980px;
+}
+
 header {
     display:flex;
-    background-color: rgba(26, 20, 20, 0.3);
     position:relative;
     z-index:1;
+}
+
+header .navbar{
+    width:100%;  
+    background-color: rgba(26, 20, 20, 0.3);
 }
 
 .top-menu {
@@ -54,12 +72,12 @@ header {
     margin:15px 2%;
 }
 
-.top-menu ul li a {
+.navbar-dark .navbar-nav .nav-link {
 text-transform:uppercase;
 color:white;
 }
 
-.top-menu ul li a:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
 color:#29d9c2;
 }
 
@@ -87,6 +105,7 @@ main .banner-block h2,h3 {
 main .banner-block h2:hover {
     font-size:2em;
 }
+
 nav {
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
@@ -330,10 +349,10 @@ footer .socicon {
 
 @media (max-width: 625px){
     h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
     h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
     .articles .description div {
     margin-top: -22px;
