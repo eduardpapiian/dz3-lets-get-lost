@@ -85,11 +85,6 @@ color:#29d9c2;
     margin-left:auto;
 }
 
-main {
-    top: -66px;
-    position: relative;
-}
-
 main .banner-block {
     height:653px;
     background-image:url(../img/banner.jpg);
