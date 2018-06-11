@@ -117,6 +117,35 @@ main .articles {
     grid-template-rows:repeat(5, auto);
 }
 
+.timer {
+    margin-top:10px;
+}
+
+.top-form #mydate{
+    text-align:center;
+    width:30px;
+    border: 1px solid black;
+    height: 30px;
+    margin: 10px 0;
+}
+#clockdiv {
+    display: inline-block;
+    text-align: center;
+}
+
+#clockdiv > div {
+    padding: 6px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#clockdiv div > span {
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #29d9c2;
+}
+
 article {
     display:grid;
     grid-template-columns:50% 50%;
@@ -294,10 +323,13 @@ footer .socicon {
         justify-content: center;
         margin: 0 10%;
     }
-    #introduction img {
+    #introduction .description .timer {
+    margin-top:10px;
+    }
+    #introduction .slider {
         display:none;
     }
-    .articles .description div{
+    .articles .description .description-text{
         width:440px;
         margin-top: -30px;
     }
@@ -349,7 +381,7 @@ footer .socicon {
     h2 {
         font-size: 20px;
     }
-    .articles .description div {
+    .articles .description .description-text {
     margin-top: -22px;
     }
     .top-menu ul li a {
@@ -374,7 +406,7 @@ footer .socicon {
     main .banner-block .row-start {
         grid-row-start: 6;
     }
-    .articles .description div {
+    .articles .description .description-text {
         width: 100%;
     }
     .article-head h2{
