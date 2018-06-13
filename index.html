@@ -13,50 +13,50 @@
 <body>
     <div class="container">
         <header>
-                <nav class="navbar navbar-expand-lg navbar-dark ">
-                  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse top-menu" id="navbarSupportedContent">
+                </button>
+                <div class="collapse navbar-collapse top-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link smooth" href="#home">Home<span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#introduction">About</a>
+                        <a class="nav-link smooth" href="#introduction">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link smooth" href="#contact">Contact</a>
                       </li>
                     </ul>
                   </div>
-                <a class="navbar-brand logo" href="#"><h1>Lets Get <span>Lost</span></h1></a>
+                <a class="navbar-brand logo smooth" href="#home"><h2>Lets Get <span>Lost</span></h2></a>
             </nav>
         </header>
         </div>
     <main>
-        <div class="banner-block">
+        <div class="banner-block" id="home">
             <nav>
                 <div class="nav-item row-start">
-                   <a href="#thailand">
+                   <a href="#thailand" class="smooth">
                        <h2>Thailand</h2>
                        <h3>Bangkok</h3>
                    </a>
                 </div>
                 <div class="nav-item">
-                    <a href="#cambodia">
+                    <a href="#cambodia" class="smooth">
                         <h2><span>Cambodia</span></h2>
                         <h3><span>Siem Reap</span></h3> 
                     </a>
                 </div>
                 <div class="nav-item row-start">
-                    <a href="#malasia">
+                    <a href="#malasia" class="smooth">
                         <h2>Malasia</h2>
                         <h3>Kuala Lumpur</h3>
                     </a>
                 </div>
                 <div class="nav-item">
-                    <a href="#indonesia">
+                    <a href="#indonesia" class="smooth">
                         <h2><span>Indonesia</span></h2>
                         <h3><span>Bali</span></h3> 
                     </a>
@@ -64,27 +64,48 @@
             </nav>
         </div>
         <div class="articles">
-            <article id="introduction">
-               <div class="description">
-                   <div>
-                   <div class="description-text">
-                       <h2>Introduction</h2>
-                       <p>Asia will never dissapointed you. From every step you took you will be amazed and suddenly fallin love with Asia</p>
-                   </div>
-                   <div class='timer'>
-                         <form class='top-form'>
-                        <label>How many days before your trip?<br>
-                          <input id="mydate" type="text" name="name" placeholder="" onclick="getValue()"><br>
-                        </label>
-                      </form>
-                      <div id="clockdiv">
-                        <div>
-                          <span class="days"></span>
-                          <div class="smalltext">Days</div>
-                        </div>
-                        <div>
-                          <span class="hours"></span>
-                          <div class="smalltext">Hours</div>
+            <div class="time-section">
+                <div class="sections-with-time">
+                    <div class="quastion">
+                        <p>let's check how much time in <span class="blue-color">Thailand/Bangkok</span></p>
+                        <input type="submit" id="bangkok-refresh" value=""/>
+                        <p class="answer"><span id="bangkok-time"></span></p>
+                    </div>
+                    <div class="quastion">
+                        <p>Let's check how much time in <span class="blue-color">Cambodia/Siem Reap</span></p>
+                        <input type="submit" id="siemreap-refresh" value=""/>
+                        <p class="answer"><span id="siemreap-time"></span></p>
+                    </div>
+                </div>
+                <div class="sections-with-time">
+                    <div class="quastion">
+                        <p>Let's check how much time in <span class="blue-color">Malasia/Kuala Lumpur</span></p>
+                        <input type="submit" id="kualalumpur-refresh" value=""/>
+                        <p class="answer"><span id="kualalumpur-time"></span></p>
+                    </div>
+                    <div class="quastion">
+                        <p>Let's check how much time in <span class="blue-color">Indonesia/Bali</span></p>
+                        <input type="submit" id="bali-refresh" value=""/>
+                        <p class="answer"><span id="bali-time"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timer">
+            <div class="frame">
+                <form class='top-form'>
+                    <label>How many days before your trip?<br>
+                         <input id="display" type="text" value=''><br>
+                    </label>
+                    <input id="refresh-date" type="submit" value="refresh">
+                </form>
+                <div id="clockdiv">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                         <div class="smalltext">Hours</div>
                         </div>
                         <div>
                           <span class="minutes"></span>
@@ -94,7 +115,15 @@
                           <span class="seconds"></span>
                           <div class="smalltext">Seconds</div>
                         </div>
-                      </div>
+                    </div>
+                </div>
+                </div>
+            <article id="introduction">
+               <div class="description">
+                   <div>
+                   <div class="description-text">
+                       <h2>Introduction</h2>
+                       <p>Asia will never dissapointed you. From every step you took you will be amazed and suddenly fallin love with Asia</p>
                    </div>
                    </div>
                </div>
@@ -214,9 +243,9 @@
             </div>
             <div class="footer-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#introduction">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="smooth">Home</a></li>
+                    <li><a href="#introduction" class="smooth">About</a></li>
+                    <li><a href="#contact" class="smooth">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-menu">
@@ -236,5 +265,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="js/timer.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/timezone.js"></script>
 </body>
 </html>

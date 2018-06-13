@@ -1,15 +1,21 @@
+var submit = document.getElementById("refresh-date");
+submit.onclick = function(event) { 
+getValue(document.getElementById("display"));
+
+const MSECS_IN_SEC = 1000;
+const MINS_IN_HOUR = 60;
+const HOURS_IN_DAY = 24;
+const MINS_IN_DAY = MINS_IN_HOUR * HOURS_IN_DAY;
+const MSECS_IN_DAY = MINS_IN_DAY * MSECS_IN_SEC;
+
 function getTimeRemaining(endtime) {
   let t = Date.parse(endtime) - Date.parse(new Date());
-  let seconds = Math.floor((t / 1000) % 60);
-  let minutes = Math.floor((t / 1000 / 60) % 60);
-  let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  let days = Math.floor(t / (1000 * 60 * 60 * 24));
   return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
+    'total': Date.parse(endtime) - Date.parse(new Date()),
+    'days': Math.floor(t / (MSECS_IN_DAY * MINS_IN_HOUR)),
+    'hours': Math.floor((t / MSECS_IN_DAY) % HOURS_IN_DAY),
+    'minutes': Math.floor((t / MINS_IN_DAY ) % MINS_IN_HOUR),
+    'seconds': Math.floor((t / MSECS_IN_SEC) % MINS_IN_HOUR)
   };
 }
 
@@ -37,12 +43,16 @@ function initializeClock(id, endtime) {
   let timeinterval = setInterval(updateClock, 1000);
 }
 
-let myDateNumber;
-function getValue(){
-  let myDate = document.getElementById("mydate").value;
-  myDateNumber = myDate;
+function getValue(element){
+    console.log(element.value);
+    getValue = (element.value);
 }
 
-var deadline="January 01 2018 00:00:00 GMT+0300";
-var deadline = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
+
+  var deadline="January 01 2018 00:00:00 GMT+0300";
+  var deadline = new Date(Date.parse(new Date()) + getValue * MSECS_IN_DAY * MINS_IN_HOUR);
+  initializeClock('clockdiv', deadline);
+};
+
+
+

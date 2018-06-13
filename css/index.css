@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 :root{
-        font-family: 'Nunito Sans', Arial;
+    font-family: 'Nunito Sans', Arial;
+    background-image:url(../img/desktop.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment: fixed;
 }
 
 body {
@@ -28,6 +32,7 @@ h3 {
 a {
     text-decoration:none;    
 }
+
 a:hover {
     text-decoration:none;    
 }
@@ -117,11 +122,68 @@ main .articles {
     grid-template-rows:repeat(5, auto);
 }
 
-.timer {
-    margin-top:10px;
+main .articles .time-section{
+    display:grid;
+    grid-template-rows:repeat(2, auto);
 }
 
-.top-form #mydate{
+main .articles .time-section .sections-with-time{
+    display:grid;
+    grid-template-columns:repeat(2, 50%);
+}
+
+.sections-with-time .quastion{
+    text-align: center;
+    height: 130px;
+    border: 1px solid black;
+        margin: 10px;
+}
+
+.sections-with-time .quastion p{
+    padding:15px 0;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.blue-color {
+    color:#29d9c2;;
+}
+
+.top-form {
+    margin-top:15px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.top-form label{
+    font-size:1.4em;
+}
+
+.top-form input {
+    margin:15px 0;
+}
+
+.quastion input {
+    outline:0;
+    cursor: pointer;
+    border: none;
+    width: 48px;
+    background-color: white;
+    background-image: url(../img/download.png);
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+}
+
+.quastion input:hover {
+    background-image: url(../img/download-hover.png);
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-form #mydate {
     text-align:center;
     width:30px;
     border: 1px solid black;
@@ -154,6 +216,7 @@ article {
 
 .article-head {
     grid-column:span 2;
+    padding: 0 20px;
 }
 
 article img {
@@ -249,7 +312,8 @@ main #contact form .send {
     border-radius: 80px;
     border:1px solid white;
     margin: 0 auto;
-    cursor: pointer
+    cursor: pointer;
+    outline:0;
 }
 
 footer {
@@ -323,9 +387,7 @@ footer .socicon {
         justify-content: center;
         margin: 0 10%;
     }
-    #introduction .description .timer {
-    margin-top:10px;
-    }
+
     #introduction .slider {
         display:none;
     }
@@ -333,6 +395,19 @@ footer .socicon {
         width:440px;
         margin-top: -30px;
     }
+    
+    .articles #introduction .description .description-text {
+    margin-top: 15px;
+    }
+    
+    .articles #introduction .description h2 {
+    background-color: white;
+    z-index:0;
+    }
+    .articles #introduction .description .description-text p {
+    border:1px solid black;
+    }
+    
     .articles .description p {
         border-top:none;
     }
@@ -384,6 +459,15 @@ footer .socicon {
     .articles .description .description-text {
     margin-top: -22px;
     }
+    
+    main .articles .time-section{
+    grid-template-rows:repeat(4, auto);
+    }
+
+    main .articles .time-section .sections-with-time .quastion{
+    grid-column:span 2;
+    }
+
     .top-menu ul li a {
         font-size: 14px;
     }
