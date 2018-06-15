@@ -49,7 +49,7 @@
 *::before,
 *::after {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -58,7 +58,7 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 @-ms-viewport {
@@ -75,29 +75,28 @@ hgroup,
 main,
 nav,
 section {
-    display: block
+    display: block;
 }
 
 body {
     margin: 0;
-    font-family: "Neucha", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-weight: 100;
+    line-height: 1;
     color: #212529;
     text-align: left;
-    background-color: #fff
+    background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
-    outline: 0 !important
+    outline: 0 !important;
 }
 
 hr {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
-    overflow: visible
+    overflow: visible;
 }
 
 h1,
@@ -107,12 +106,12 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: 0.5rem
+    margin-bottom: 0.5rem;
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 0;
 }
 
 abbr[title],
@@ -121,7 +120,7 @@ abbr[data-original-title] {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
     cursor: help;
-    border-bottom: 0
+    border-bottom: 0;
 }
 
 address {
@@ -394,7 +393,6 @@ h6,
 .h5,
 .h6 {
     margin-bottom: 0.5rem;
-    font-family: "Cabin Sketch", cursive;
     font-weight: 500;
     line-height: 1.2;
     color: inherit
@@ -9748,7 +9746,6 @@ a.text-dark:focus {
 }
 
 .navbar-brand {
-    font-family: "Cabin Sketch", cursive;
     font-weight: normal;
     text-decoration: none
 }

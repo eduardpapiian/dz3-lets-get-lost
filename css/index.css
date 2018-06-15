@@ -273,7 +273,7 @@ main #contact {
 
 main #contact h1 {
     text-align:center;
-    margin:30px 0;
+    margin:15px 0;
 }
 
 main #contact form {
@@ -333,12 +333,13 @@ footer div {
 }
 
 footer .footer-menu ul {
-display:flex;
+    display:flex;
 }
 
 footer .footer-menu ul li {
     text-align:center;
     margin:10px;
+    list-style:none;
 }
 
 footer .footer-menu ul li a {
